@@ -1,10 +1,8 @@
 import axios from "axios";
 
- const user = axios.create({
-    baseURL: import.meta.env.VITE__ENV__BASE,
-    headers:{
-  "Content-type":"application/json"
-    },
-    timeout:10000
+const user = axios.create({
+  baseURL:" https://api.tvmaze.com/shows ",
+  headers:{
+    "Content-Type":"application/json"
+  },timeout:1000
 })
-export default user
