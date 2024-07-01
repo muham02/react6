@@ -1,7 +1,7 @@
 import axios from "axios";
 
  const user = axios.create({
-    baseURL:" https://api.tvmaze.com",
+    baseURL: import.meta.env.VITE__ENV__BASE,
     headers:{
   "Content-type":"application/json"
     },
